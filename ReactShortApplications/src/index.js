@@ -7,17 +7,20 @@ import reportWebVitals from './reportWebVitals';
 // import CurryingExample from './CurryingExample'
 // import Forms from './Forms';
 // import ContextExample from './ContextExample'
-import ImageGridApplication from './ImageGridApplication'
+// import ImageGridApplication from './ImageGridApplication'
+import ReducerExample from './ReducerExample';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // The strict mode render a dom for 2 times just to verify unsafe lifecycle, legacy context api, deprecated findDOMNode usage
   <React.StrictMode>
     {/* <App /> */}
     {/* <Contact /> */}
     {/* <CurryingExample /> */}
     {/* <Forms /> */}
     {/* <ContextExample /> */}
-    <ImageGridApplication />
+    {/* <ImageGridApplication /> */}
+    <ReducerExample />
   </React.StrictMode>
 );
 
