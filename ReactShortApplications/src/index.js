@@ -9,6 +9,9 @@ import reportWebVitals from './reportWebVitals';
 // import ContextExample from './ContextExample'
 // import ImageGridApplication from './ImageGridApplication'
 import ReducerExample from './ReducerExample';
+import { store } from './ReduxToolkit/store'
+import { Provider } from 'react-redux';
+import ReduxTodo from './ReduxToolkit/ReduxTodo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,7 +23,10 @@ root.render(
     {/* <Forms /> */}
     {/* <ContextExample /> */}
     {/* <ImageGridApplication /> */}
-    <ReducerExample />
+    {/* <ReducerExample /> */}
+    <Provider store={store}>
+      <ReduxTodo />
+    </Provider>
   </React.StrictMode>
 );
 

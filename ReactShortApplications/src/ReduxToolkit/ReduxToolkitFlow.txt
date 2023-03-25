@@ -1,0 +1,10 @@
+We have to create a redux store using configureStore().
+Inside configureStore, we have multiple reducer store.
+
+Connect this store with our react application using Provider of react-redux with a props of store.
+
+Create a redux state slice using createSlice(basically in that we defined store name(name), default value(initialState), all the actions on store(inside reducers key), )
+we have to export all the action so we used actions in other files
+
+Now, we have to used get a data from store by using useSelector
+and dispatch any action by using useDispatch
